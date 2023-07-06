@@ -6,20 +6,20 @@ const CustomModal = ({ isVisible, animationType, selectedEvent, onCancel, onDele
   return (
       <Modal visible={isVisible} animationType={animationType}>
       <View style={styles.container}>
-        <Text style={styles.title}>Event Detail</Text>
+        <Text style={styles.title}>Desea quitar la tarea?</Text>
         <View style={styles.detailContainer}>
-          <Text style={styles.detailMessage}>Are you sure to delete this item?</Text>
+          <Text style={styles.detailMessage}>Ingresar</Text>
           <Text style={styles.selectedEvent}>{selectedEvent?.value}</Text>
         </View>
         <View style={styles.buttonContainer}>
           <Button 
             title='Cancel'
-            color='#52528C'
+            color='#4A55A2'
             onPress={onCancel}
           />
           <Button 
           title='Delete'
-          color='#52528C'
+          color='#4A55A2'
           onPress={() => onDelete(selectedEvent.id)}
           />
         </View>

@@ -42,11 +42,11 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Input 
-        buttonColor='#52528C'
-        buttonTitle='Add'
+        buttonColor='#4A55A2'
+        buttonTitle='Agregar'
         onChangeText={(text) => setText(text)}
         onHandlerButton={onAddEvent}
-        placeholder='Enter your event' 
+        placeholder='Ingrese el evento' 
         value={text}
       />
       <Events events={events} onSelectItem={onHandlerEvent} />
